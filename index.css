@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-one {
+  height: 100vh;
+}
+
+@media (min-width: 769px) {
+  .section-one {
+    height: 85vh;
+  }
+}
+
+.header {
+  background-color: hsla(0, 0%, 77%, 1);
+
+  padding: 5%;
+}
+
+@media (min-width: 769px) {
+  .header {
+    padding: 3%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.black-button {
+  background-color: #000000;
+
+  width: 25%;
+  height: 3.8rem;
+}
+
+@media (min-width: 769px) {
+  .black-button {
+    width: 10%;
+  }
+}
+
+.cont-text {
+  display: flex;
+  justify-content: center;
+
+  height: 100%; /* Lo hice de esta forma (LE DOY EL ALTO MÁXIMO Y SOBRE ESE ALTO ALINEO, EN LUGAR DE HACERLO CRECER CON FLEX-GROW), está mal? Por qué?*/
+  align-items: center;
+}
+
+.text {
+  font-size: 3rem;
+}
+
+.section-two {
+  background: rgba(143, 172, 245, 1);
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .section-two {
+    height: 70vh;
+  }
+}
+
+.bye {
+  color: #fff;
+}
